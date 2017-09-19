@@ -1,0 +1,13 @@
+package inputstream;
+
+import java.io.FilterInputStream;
+import java.io.InputStream;
+
+public class LowerCaseInputStream extends FilterInputStream {
+
+	public LowerCaseInputStream(InputStream in) {
+		super(in);
+		// TODO Auto-generated constructor stub
+	}
+
+}
