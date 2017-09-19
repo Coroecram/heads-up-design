@@ -1,0 +1,21 @@
+package decorator.condiments;
+
+public class Whip extends CondimentDecorator {
+
+	public Whip() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double cost() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

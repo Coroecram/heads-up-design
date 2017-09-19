@@ -1,0 +1,17 @@
+package decorator.concrete;
+
+import decorator.component.Beverage;
+
+public class Espresso extends Beverage {
+
+	public Espresso() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double cost() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

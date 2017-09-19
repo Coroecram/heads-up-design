@@ -1,0 +1,24 @@
+import decorator.component.Beverage;
+import decorator.concrete.Espresso;
+import decorator.concrete.Decaf;
+import decorator.concrete.DarkRoast;
+import decorator.concrete.HouseBlend;
+
+
+
+public class StarbuzzCoffee {
+
+	public StarbuzzCoffee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Beverage beverage = new Espresso();
+		
+
+	}
+
+}

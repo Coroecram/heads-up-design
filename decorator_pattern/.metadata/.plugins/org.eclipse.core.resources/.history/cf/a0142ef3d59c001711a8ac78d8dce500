@@ -1,0 +1,22 @@
+package decorator.concrete;
+
+import decorator.component.Beverage;
+
+public class DarkRoast extends Beverage {
+
+	public DarkRoast() {
+		description = "Dark Roast Coffee";
+	}
+
+	@Override
+	public double cost() {
+		double price;
+		switch(this.size) {
+		case Size.TALL:
+		}
+			return .99;
+		} else if
+		
+	}
+
+}
