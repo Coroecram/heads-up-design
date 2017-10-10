@@ -10,6 +10,9 @@ public class InputTest {
 
 	public InputTest() {	}
 
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) throws IOException {
 		int c;
 		
