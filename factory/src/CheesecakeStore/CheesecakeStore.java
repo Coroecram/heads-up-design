@@ -5,13 +5,15 @@ import IngredientFactory.CheesecakeIngredientFactory;
 
 public abstract class CheesecakeStore {	
 	
-	public Cheesecake orderCheesecake(String kind) {
+	public Cheesecake orderCheesecake() throws InterruptedException {
 		Cheesecake cheesecake;
 		
-		cheesecake = createCheesecake(kind);
+		cheesecake = createCheesecake();
 		
+		cheesecake.gather();
 		cheesecake.prepare();
 		cheesecake.bake();
+		cheesecake.cool();
 		cheesecake.top();
 		cheesecake.slice();
 		cheesecake.box();
@@ -19,6 +21,6 @@ public abstract class CheesecakeStore {
 		return cheesecake;
 	}
 	
-	protected abstract Cheesecake createCheesecake(String kind);
+	protected abstract Cheesecake createCheesecake();
 
 }

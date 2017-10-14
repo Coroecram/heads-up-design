@@ -4,7 +4,7 @@ import Ingredient.*;
 
 public interface CheesecakeIngredientFactory {
 
-	public Cream createCream();
+	public Cheese createCheese();
 	public Filling createFilling();
 	public Topping createTopping();
 	public Crust createCrust();

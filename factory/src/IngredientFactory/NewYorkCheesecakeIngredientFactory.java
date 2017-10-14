@@ -1,34 +1,35 @@
 package IngredientFactory;
 
 import Ingredient.Cheese;
-import Ingredient.ChiffonCottageCheese;
-import Ingredient.CoconutFrosting;
+import Ingredient.GrahamCrackerCrust;
+import Ingredient.ThickCreamCheese;
+import Ingredient.StrawberryTopping;
 import Ingredient.Crust;
-import Ingredient.DicedPineapple;
+import Ingredient.FreshStrawberry;
 import Ingredient.Filling;
 import Ingredient.Topping;
 
-public class FilipinoCheesecakeIngredientFactory implements
+public class NewYorkCheesecakeIngredientFactory implements
 		CheesecakeIngredientFactory {
 
 	@Override
 	public Cheese createCheese() {
-		return new ChiffonCottageCheese();
+		return new ThickCreamCheese();
 	}
 
 	@Override
 	public Filling createFilling() {
-		return new DicedPineapple();
+		return new FreshStrawberry();
 	}
 
 	@Override
 	public Topping createTopping() {
-		return new CoconutFrosting();
+		return new StrawberryTopping();
 	}
 
 	@Override
 	public Crust createCrust() {
-		return null;
+		return new GrahamCrackerCrust();
 	}
 
 }

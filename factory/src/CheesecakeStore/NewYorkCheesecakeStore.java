@@ -1,13 +1,21 @@
 package CheesecakeStore;
 
 import Cheesecake.Cheesecake;
+import Cheesecake.NewYorkCheesecake;
+import IngredientFactory.CheesecakeIngredientFactory;
+import IngredientFactory.NewYorkCheesecakeIngredientFactory;
 
 public class NewYorkCheesecakeStore extends CheesecakeStore {
 
-	@Override
-	protected Cheesecake createCheesecake(String kind) {
-		// TODO Auto-generated method stub
-		return null;
+	protected Cheesecake createCheesecake() {
+		Cheesecake cheesecake;
+		
+		CheesecakeIngredientFactory cheesecakeIngredientFactory = 
+				new NewYorkCheesecakeIngredientFactory();
+		
+		cheesecake = new NewYorkCheesecake(cheesecakeIngredientFactory);
+		
+		return cheesecake;
 	}
 
 }
