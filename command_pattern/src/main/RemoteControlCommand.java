@@ -9,8 +9,11 @@ public class RemoteControlCommand {
 		Light light = new Light();
 		LightOffCommand lightOff = new LightOffCommand(light);
 		LightOnCommand lightOn = new LightOnCommand(light);
+		CeilingFan fan = new CeilingFan();
+		CeilingFanPull pullFan = new CeilingFanPull(fan);
 		
 		rc.setCommand(0, lightOn, lightOff);
+		rc.setCommand(1, pullFan, pullFan);
 		rc.onButtonWasPushed(0);
 		rc.offButtonWasPushed(0);
 		System.out.println("\n------------------------------------------\n");
